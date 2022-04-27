@@ -1,0 +1,21 @@
+.footer-nav-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer-nav-container .css-imwso6-MuiBottomNavigationAction-label {
+    margin: 10px 0 0 0;
+    color: #FFF;
+}
+
+.footer-nav-container .css-imwso6-MuiBottomNavigationAction-label.Mui-selected,
+.footer-nav-container .css-imwso6-MuiBottomNavigationAction-label {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.footer-nav-container .css-olvj44-MuiBottomNavigation-root {
+    height: 80px;
+}
