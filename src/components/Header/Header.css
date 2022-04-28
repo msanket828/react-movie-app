@@ -1,8 +1,13 @@
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background: #333;
     color: #FFF;
     padding: 10px 0;
     text-align: center;
+    z-index: 100;
 }
 
 header h3 {
