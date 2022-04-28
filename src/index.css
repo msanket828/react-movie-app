@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -129,6 +130,10 @@ body {
   margin: 0 0 10px;
 }
 
+.genre-chip {
+  margin: 5px 5px 8px !important;
+}
+
 @media only screen and (min-width: 768px) {
   .single-content {
     width: calc(33.33% - 20px);
@@ -141,13 +146,23 @@ body {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .single-content {
     width: calc(50% - 20px);
   }
 }
 
 @media only screen and (max-width: 576px) {
+
+  .page-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .common {
+    margin: 39px 0 75px;
+  }
+
   .single-content {
     width: 100%;
   }
@@ -155,4 +170,6 @@ body {
   .single-content img {
     height: 330px;
   }
+
+
 }

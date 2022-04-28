@@ -1,0 +1,12 @@
+.pagination {
+    margin: 10px 0 0;
+}
+
+.pagination .css-wjh20t-MuiPagination-ul {
+   justify-content: center;
+}
+
+.pagination .css-yuzg60-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+    background: #333;
+    color: #FFF;
+}

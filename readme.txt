@@ -9,4 +9,5 @@ Material ui icon: npm i @mui/icons-material
 
 ##TVDB API Key
 public_key=0132e8b184a6d8e52f826dc4e33cd8fd;
-https://api.themoviedb.org/3/movie/550?api_key=0132e8b184a6d8e52f826dc4e33cd8fd
+Trending: https://api.themoviedb.org/3/movie/550?api_key=0132e8b184a6d8e52f826dc4e33cd8fd
+Movies: https://api.themoviedb.org/3/discover/movie?api_key=0132e8b184a6d8e52f826dc4e33cd8fd
