@@ -10,14 +10,15 @@ const Trending = () => {
   const key = "0132e8b184a6d8e52f826dc4e33cd8fd";
   const url = "https://api.themoviedb.org/3/trending/all/day?api_key=";
 
+  const getTrendingData = async () => {
+    const response = await axios.get(`${url}${key}&page=${page}`);
+    setContent(response.data.results);
+    console.log(response.data.results);
+  };
   
   useEffect(() => {
-      const getTrendingData = async () => {
-        const response = await axios.get(`${url}${key}&page=${page}`);
-        setContent(response.data.results);
-        console.log(response.data.results);
-      };
       getTrendingData();
+      // eslint-disable-next-line
 }, [page]);
 
   return (

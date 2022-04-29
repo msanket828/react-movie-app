@@ -14,18 +14,19 @@ const Genres=({
 
     const key = "0132e8b184a6d8e52f826dc4e33cd8fd";
 
+    const fetchGenres=async ()=> {
+        const data=await axios.get(
+            `https://api.themoviedb.org/3/genre/${type}/list?api_key=${key}`
+        );
+        setGenres(data.data.genres);
+    }
     
     useEffect(()=> {
-        const fetchGenres=async ()=> {
-            const data=await axios.get(
-                `https://api.themoviedb.org/3/genre/${type}/list?api_key=${key}`
-            );
-            setGenres(data.data.genres);
-        }
         fetchGenres();
         return ()=> {
             setGenres({});
         }
+        // eslint-disable-next-line
     },[])
 
     return (

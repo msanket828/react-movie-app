@@ -16,16 +16,17 @@ const Movies = () => {
     const key = "0132e8b184a6d8e52f826dc4e33cd8fd";
     const url = "https://api.themoviedb.org/3/discover/movie?api_key=";
   
+    const getTrendingData = async () => {
+      const response = await axios.get(`${url}${key}&page=${page}`);
+      setContent(response.data.results);
+      setNumOfPages(response.data.total_pages);
+      console.log(response.data.results);
+    };
     
     useEffect(() => {
-        const getTrendingData = async () => {
-          const response = await axios.get(`${url}${key}&page=${page}`);
-          setContent(response.data.results);
-          setNumOfPages(response.data.total_pages);
-          console.log(response.data.results);
-        };
         getTrendingData();
-  }, [page]);
+        // eslint-disable-next-line
+  }, [page,genres]);
 
   return (
     <div className="movies common">
